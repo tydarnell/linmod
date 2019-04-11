@@ -4,12 +4,18 @@
 \alias{plotpower}
 \title{Plot Normal Power Function}
 \usage{
-plotpower(n, a)
+plotpower(n, a, lower = 0, upper = 1, twotail = F)
 }
 \arguments{
 \item{n}{sample size}
 
 \item{a}{alpha value}
+
+\item{lower}{lower bound}
+
+\item{upper}{upper bound}
+
+\item{twotail}{twotail T/F}
 }
 \description{
 This function creates and plots a normal power function requires ggplot
