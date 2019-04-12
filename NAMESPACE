@@ -2,6 +2,7 @@
 
 export(cindex)
 export(eigenvi)
+export(plotfunc)
 export(plotpower)
 export(powerfun)
 export(powerfun2)
