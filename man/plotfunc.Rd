@@ -4,7 +4,7 @@
 \alias{plotfunc}
 \title{Plot Function}
 \usage{
-plotfunc(f, lower, upper)
+plotfunc(f, lower = 0, upper = 1)
 }
 \arguments{
 \item{f}{function}

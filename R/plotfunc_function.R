@@ -9,7 +9,7 @@
 #' @examples
 #' plotfunc_function()
 
-plotfunc=function(f,lower,upper){
+plotfunc=function(f,lower=0,upper=1){
   require(ggplot2)
   p = ggplot(data = data.frame(x = 0), mapping = aes(x = x))
   p+stat_function(fun= f,color="blue")+
