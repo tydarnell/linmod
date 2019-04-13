@@ -4,14 +4,14 @@
 \alias{plotfunc}
 \title{Plot Function}
 \usage{
-plotfunc(f, lower = 0, upper = 1, ...)
+plotfunc(lower = 0, upper = 1, ...)
 }
 \arguments{
-\item{f}{function}
-
 \item{lower}{lower bound}
 
 \item{upper}{upper bound}
+
+\item{f}{function}
 }
 \description{
 Plots a function
