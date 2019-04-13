@@ -12,13 +12,14 @@
 #' plotpower_function()
 
 plotpower=function(n,a,lower=0,upper=1,twotail=F){
-  require(ggplot2)
   if (twotail==F) {
   f=powerfun(n,a)
   }
   else {
     f=powerfun2(n,a)
   }
-  p = ggplot(data = data.frame(x = 0), mapping = aes(x = x))
-  p+stat_function(fun= f,color="blue")+scale_x_continuous(limits = c(lower, upper))+xlab(expression(theta))+ylab("Power")
+  p = ggplot2::ggplot(data = data.frame(x = 0), mapping = ggplot2::aes(x = x))
+  p+ggplot2::stat_function(fun= f,color="blue")+
+    ggplot2::scale_x_continuous(limits = c(lower, upper))+
+    ggplot2::xlab(expression(theta))+ggplot2::ylab("Power")
 }
