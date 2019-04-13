@@ -4,7 +4,7 @@
 \alias{plotfunc}
 \title{Plot Function}
 \usage{
-plotfunc(lower = 0, upper = 1, ...)
+plotfunc(..., lower = 0, upper = 1)
 }
 \arguments{
 \item{lower}{lower bound}

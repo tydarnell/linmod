@@ -9,8 +9,8 @@
 #' @examples
 #' plotfunc_function()
 
-plotfunc=function(lower=0,upper=1,...){
-  colors=c("red","blue","green","yellow","red")
+plotfunc=function(...,lower=0,upper=1){
+  require(tidyverse)
   arg=list(...)
   a=map(arg,function(f) stat_function(fun=f))
   require(ggplot2)
