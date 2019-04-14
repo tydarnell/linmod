@@ -17,5 +17,5 @@ plotmult <- function(v,a,lower=0,upper=1) {
   }
   a=map(d,function(f) ggplot2::stat_function(fun=f))
   p = ggplot2::ggplot(data = data.frame(x = 0), mapping = ggplot2::aes(x = x))
-  p+a+scale_x_continuous(limits=c(lower,upper))
+  p+a+ggplot::scale_x_continuous(limits=c(lower,upper))
 }
